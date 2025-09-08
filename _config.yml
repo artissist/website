@@ -1,8 +1,8 @@
 # Site settings
 title: "Artissist - Artist's Personal Assistant"
 description: "A personal assistant platform designed to streamline creative workflows for artists"
-baseurl: "/website"
-url: "https://artissist.github.io"
+baseurl: ""  # Empty for custom domain
+url: "https://artissist.ai"  # Update this to your custom domain when ready
 
 # Build settings
 markdown: kramdown
