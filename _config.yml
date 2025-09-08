@@ -1,0 +1,38 @@
+# Site settings
+title: "Artissist - Artist's Personal Assistant"
+description: "A personal assistant platform designed to streamline creative workflows for artists"
+baseurl: "/website"
+url: "https://artissist.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# GitHub Pages / Jekyll 4 compatibility
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
+
+# Navigation
+header_pages:
+  - _docs/about.md
+  - _docs/docs.md
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
