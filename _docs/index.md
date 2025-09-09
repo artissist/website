@@ -17,7 +17,7 @@ Artissist is an artist's personal assistant platform designed to streamline crea
 
 ## Getting Started
 
-Visit our [documentation](/website/docs/docs/) to learn more about Artissist's features and capabilities.
+Visit our [documentation]({{ site.baseurl }}/docs/docs/) to learn more about Artissist's features and capabilities.
 
 ## Project Status
 
