@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Documentation
-published: false
+published: true
 ---
 
 # Documentation
 
-Welcome to the Mosaic documentation. Here you'll find guides and references for using the platform.
+Welcome to the Artissist documentation. Here you'll find guides and references for using the platform.
 
 ## Architecture Documentation
 
@@ -22,7 +22,7 @@ Welcome to the Mosaic documentation. Here you'll find guides and references for 
 
 ## Project Overview
 
-Mosaic is designed around core entities and workflows:
+Artissist is designed around core entities and workflows:
 
 - **Projects**: Central organizing units for artistic endeavors
 - **Logs**: Conversational entries that capture the creative process
@@ -39,3 +39,10 @@ Mosaic is designed around core entities and workflows:
 ## API Reference
 
 The platform uses GraphQL via AWS AppSync for all data operations. Key query and mutation patterns are documented in our API guides.
+
+## Additional Resources
+- [Architecture Overview]({{ site.baseurl }}/docs/architecture/)
+- [Data Model]({{ site.baseurl }}/docs/data-model/)
+
+## Support
+If you encounter issues or have questions, open an issue on GitHub or join the community discussions.
