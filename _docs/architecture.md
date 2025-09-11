@@ -1,12 +1,12 @@
 ---
 layout: page
 title: "Architecture Overview"
-published: false
+published: true
 ---
 
 # Architecture Overview
 
-Mosaic follows a modern AWS-first architecture designed for scalability, reliability, and cost-effectiveness.
+Artissist follows a modern AWS-first architecture designed for scalability, reliability, and cost-effectiveness.
 
 ## High-Level Architecture
 
@@ -71,3 +71,18 @@ This design enables efficient queries while maintaining ACID properties across r
 - **Row-level security** scoped by ownerId/orgId
 - **KMS encryption** for all data stores
 - **Signed URLs** for secure S3 access
+
+## Deployment and Infrastructure
+- GitHub Actions build and deploy the site and services
+- Infrastructure is provisioned with Terraform using reusable modules
+- Automated testing gates changes before promotion
+
+## Security and Compliance
+- All traffic is encrypted in transit with TLS
+- Secrets are managed through AWS Secrets Manager
+- Audit logs capture all user actions for compliance reviews
+
+## Observability
+- Amazon CloudWatch aggregates logs and metrics
+- Distributed tracing with AWS X-Ray
+- Alerts notify the team of service disruptions

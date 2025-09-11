@@ -194,7 +194,7 @@ The deployment is configured in `.github/workflows/pages.yml` with:
 Key configuration options in `_config.yml`:
 
 ```yaml
-title: "Mosaic - Artist's Personal Assistant"
+title: "Artissist - Artist's Personal Assistant"
 description: "A personal assistant platform designed to streamline creative workflows for artists"
 baseurl: "/website"                    # GitHub Pages subpath
 url: "https://artissist.github.io"     # GitHub Pages domain
@@ -250,6 +250,6 @@ Uses the default `minima` theme with customizations possible through:
 ## Links
 
 - **Live Site**: https://artissist.github.io/website/
-- **Main Project**: [Artissist Repository](https://github.com/artissist/mosaic)
+- **Main Project**: [Artissist Repository](https://github.com/artissist/artissist)
 - **Jekyll Documentation**: https://jekyllrb.com/docs/
 - **GitHub Pages**: https://pages.github.com/

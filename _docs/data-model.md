@@ -1,16 +1,16 @@
 ---
 layout: page
 title: "Data Model"
-published: false
+published: true
 ---
 
 # Data Model
 
-Mosaic uses a single-table DynamoDB design optimized for access patterns and cost efficiency.
+Artissist uses a single-table DynamoDB design optimized for access patterns and cost efficiency.
 
 ## Table Structure
 
-**Table Name**: `Mosaic`
+**Table Name**: `Artissist`
 **Partition Key**: `TENANT#<ownerId|orgId>`
 **Sort Key**: Hierarchical patterns for different entity types
 
@@ -132,3 +132,22 @@ Attributes:
 - **Eventually consistent** for cross-user analytics
 - **Atomic transactions** for related entity updates
 - **Optimistic locking** via version attributes
+
+## Transactions and Concurrency
+- DynamoDB transactions ensure related entities update atomically
+- Version attributes provide optimistic locking for conflicting writes
+
+## TTL and Archival
+- Items support `expiresAt` timestamps for automatic expiration
+- Archived records are moved to cold storage for long-term reference
+
+## Example Query
+```graphql
+query GetProjectLogs($projectId: ID!) {
+  logs(projectId: $projectId) {
+    logId
+    materials
+    timeSpentMinutes
+  }
+}
+```
